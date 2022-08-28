@@ -12,7 +12,7 @@ router.get('/', async(req, res) => {
 
 router.get('/:postId', async (req, res) => {
     try {
-        const posts = await Contract.findById(req.params.postId)
+        const posts = await Constitutional.findById(req.params.postId)
         res.json(posts)
     } catch (error) {
         res.status(400).send(error)
