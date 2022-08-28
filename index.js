@@ -5,7 +5,7 @@ require('dotenv/config');
 const bodyParser = require('body-parser')
 const cors = require('cors')
 
-const port = process.env.PORT || 3005
+const PORT = process.env.PORT || 3005
 
 //middlewares
 app.use(cors());
@@ -51,6 +51,6 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log('Server is up and running');
 })
